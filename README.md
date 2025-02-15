@@ -1,0 +1,3 @@
+# Silent Failure in Ownable Contract
+
+This repository demonstrates a common bug in Solidity smart contracts: silent failure in ownership transfer.  The `Ownable` contract lacks a check to prevent the owner from transferring ownership to themself. This leads to unexpected behavior where no event is emitted, and the transfer appears to have failed silently.  The provided solution adds a check to address this issue. 
